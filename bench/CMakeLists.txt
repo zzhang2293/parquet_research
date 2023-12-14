@@ -1,0 +1,3 @@
+add_executable(bench_aggregation bench_aggregation.cpp)
+add_executable(bench_arithmetic bench_arithmetic.cpp)
+add_executable(bench_selection bench_selection.cpp)

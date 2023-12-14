@@ -1,0 +1,10 @@
+macro(parcook_add_test NAME)
+    add_executable(${NAME} ${NAME}.cpp)
+    target_include_directories(${NAME} PRIVATE ../include)
+    target_link_libraries(${NAME} parcook)
+    add_test(${NAME} ${NAME})
+endmacro()
+
+parcook_add_test(test_aggregation)
+parcook_add_test(test_arithmetic)
+parcook_add_test(test_selection)
